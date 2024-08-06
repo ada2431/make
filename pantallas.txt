@@ -1,0 +1,38 @@
+registro clientes 
+<asp:ControlParameter Name="Fecha_check" Type="String" ControlId="TextBox1"/>
+                <asp:ControlParameter Name="Hora_Check" Type="String" ControlId="TextBox2"/>
+                <asp:ControlParameter Name="Personal_de_servicio" Type="String" ControlId="TextBox3"/>
+                <asp:ControlParameter Name="Nombre_del_huesped" Type="String" ControlId="TextBox4"/>
+                <asp:ControlParameter Name="Habitacion_reservada" Type="String" ControlId="TextBox5"/>
+                <asp:ControlParameter Name="Fechas_reservadas_DESDE" Type="String" ControlId="TextBox6"/>
+                <asp:ControlParameter Name="Fechas_reservadas_HASTA" Type="String" ControlId="TextBox7"/>
+                <asp:ControlParameter Name="Nombre_de_la_reserva" Type="String" ControlId="TextBox8"/>
+                <asp:ControlParameter Name="Direccion" Type="String" ControlId="TextBox9"/>
+                <asp:ControlParameter Name="Matricula" Type="String" ControlId="TextBox10"/>
+                <asp:ControlParameter Name="Nro_Registro" Type="String" ControlId="TextBox11"/>
+
+
+
+
+
+
+factura
+
+<asp:ControlParameter Name="Factura_Nro" Type="String" ControlId="Textbox1"/>
+                <asp:ControlParameter Name="Nombre_del_hotel" Type="String" ControlId="DropDownList1"/>
+                <asp:ControlParameter Name="Direccion_hotel" Type="String" ControlId="DropDownList2"/>
+                <asp:ControlParameter Name="Numero_telefono" Type="String" ControlId="DropDownList3"/>
+                <asp:ControlParameter Name="Nombre_Huesped" Type="String" ControlId="Textbox2"/>
+                <asp:ControlParameter Name="Direccion" Type="String" ControlId="Textbox3"/>
+                <asp:ControlParameter Name="Numero_Id" Type="String" ControlId="Textbox4"/>
+                <asp:ControlParameter Name="Contacto" Type="String" ControlId="Textbox5"/>
+                <asp:ControlParameter Name="Numero_de_reserva" Type="String" ControlId="Textbox6"/>
+                <asp:ControlParameter Name="Fecha_Llegada" Type="String" ControlId="Textbox7"/>
+                <asp:ControlParameter Name="Fecha_salida" Type="String" ControlId="Textbox8"/>
+                <asp:ControlParameter Name="Numero_Habitacion" Type="String" ControlId="Textbox9"/>
+                <asp:ControlParameter Name="Tipo_Habitacion" Type="String" ControlId="DropDownList4"/>
+                <asp:ControlParameter Name="Noches_de_alojamiento" Type="String" ControlId="Textbox10"/>
+                <asp:ControlParameter Name="Precio_por_dias" Type="String" ControlId="Textbox11"/>
+                <asp:ControlParameter Name="Servicios_adicionales" Type="String" ControlId="DropDownList5"/>
+                <asp:ControlParameter Name="Total_a_pagar" Type="String" ControlId="Textbox13"/>
+                <asp:ControlParameter Name="Fecha" Type="String" ControlId="Textbox14"/>

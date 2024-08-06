@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentarios de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .comment-section {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .comment-section h2 {
+            text-align: center;
+        }
+        .comment-form {
+            margin-top: 20px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .comment-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #45a049;
+        }
+        .comment-list {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-section">
+        <h2>Deja tu comentario</h2>
+        <form class="comment-form" id="commentForm">
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="comment-list" id="commentList">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const comment = document.getElementById('comment').value;
+            if (comment.trim() !== '') {
+                addComment(comment);
+                document.getElementById('comment').value = '';
+            }
+        });
+
+        function addComment(comment) {
+            const commentList = document.getElementById('commentList');
+            const commentElement = document.createElement('div');
+            commentElement.className = 'comment';
+            commentElement.textContent = comment;
+            commentList.appendChild(commentElement);
+        }
+    </script>
+</body>
+</html>
